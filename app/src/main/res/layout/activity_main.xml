@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:drawableStart="@drawable/ic_baseline_developer_board_24"
+        android:drawablePadding="15dp"
+        android:fontFamily="monospace"
+        android:paddingLeft="1dp"
+        android:paddingTop="10dp"
+        android:text="QR-code Generator "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="31dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/input"
+        android:hint="Enter URL"
+        />
+
+    <Button
+        android:fontFamily="monospace"
+        android:id="@+id/button"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="GENERATE QR-CODE"
+        android:textColor="@color/black"
+        />
+    <ImageView
+        android:id="@+id/qrcode"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:padding="1dp"
+        android:scaleType="centerCrop"
+        android:cropToPadding="true"
+        />
+
+</LinearLayout>
